@@ -9,3 +9,7 @@ WHERE `cfu` > 10;
 3) SELECT *
 FROM `students`
 WHERE `date_of_birth` < '1993-03-28';
+
+4) SELECT * 
+FROM `courses`
+WHERE `period` LIKE 'I %' AND `year` = 1;

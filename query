@@ -1,6 +1,6 @@
 1) SELECT * 
 FROM `students`
-WHERE `date_of_birth` LIKE '1990%';
+WHERE YEAR(`date_of_birth`) = 1990;
 
 2) SELECT * 
 FROM `courses`

@@ -10,3 +10,6 @@ GROUP BY office_address;
 FROM `exam_student`
 GROUP BY exam_id;
 
+4) SELECT COUNT(name), department_id
+FROM `degrees`
+GROUP BY department_id;

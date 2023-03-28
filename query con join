@@ -25,3 +25,12 @@ ON degrees.id = students.degree_id
 JOIN departments
 ON departments.id = degrees.department_id
 ORDER BY CONCAT(students.name, students.surname) ASC;
+
+5) SELECT degrees.name, courses.name, CONCAT(teachers.surname,' ',teachers.name) AS FullName
+FROM degrees
+JOIN courses
+ON degrees.id = courses.degree_id
+JOIN course_teacher
+ON courses.id = course_teacher.course_id
+JOIN teachers
+ON teachers.id = course_teacher.teacher_id;
